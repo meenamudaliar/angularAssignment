@@ -1,0 +1,22 @@
+<h1 style="text-align: center; color: darkblue;">PROPERTY LIST</h1>
+<div><table>
+<tr>
+    <td><button (click)="create()">Create property</button></td>
+    <td><button>Delete Property</button></td>
+</tr>
+</table>
+    
+</div>
+<div>
+    <table style="border: 1px solid black;">
+        <tr><th style="text-align: center; font-size:large;">Name</th>
+        <th style="text-align: center; font-size:large;">Description</th>
+        <th style="text-align: center; font-size:large;">Size</th>
+        </tr>
+        <tr  *ngFor="let prop of property">
+            <td>{{prop.name}}</td>
+            <td>{{prop.description}}</td>
+            <td>{{prop.size}}</td>
+        </tr>
+    </table>
+</div>

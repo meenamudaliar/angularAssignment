@@ -1,0 +1,17 @@
+<h2 style="text-align: center; color:darkblue;">ADD PROPERTY</h2>
+<form  #f="ngForm" (ngSubmit)="onsubmit(f)">
+    
+    <div class="form-group row" >
+     <label>Name</label>
+        <input type="text" class="form-control" id="name" ngModel name="name" name="name">
+    </div>
+    <div class="form-group row" >
+        <label>Description</label>
+        <input type="text" class="form-control" id="description" ngModel description="description" name="description">
+    </div>
+    <div class="form-group row">
+        <label>Size</label>
+        <input type="text" class="form-control" id="size" ngModel size="size" name="size">
+    </div><br>
+    <button class="btn btn-success" type="submit" >create</button>
+</form>
